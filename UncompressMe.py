@@ -35,7 +35,7 @@ while i>0:
 	message = extract_encoded_string_and_decompress_it(response) + '\n'
 	s.send(message.encode())
 
-	#Réception du flag
+	#Réception de la réponse
 	response = s.recv(1000).decode()
 	print(response)
 	i-=1
